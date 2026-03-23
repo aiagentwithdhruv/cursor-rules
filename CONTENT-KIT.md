@@ -260,60 +260,276 @@ Star it if it saves you time.
 
 ---
 
-## 4. Twitter/X Posts
+## 4. Twitter/X Posts (X Premium — 2 Month Window)
 
-### Main Tweet
+> **X Premium perks we're using:** 4,000 char tweets, bold/italic formatting (Unicode), blue checkmark, boosted reply ranking, edit button (30 min), analytics, longer video uploads (up to 3 hrs).
+>
+> **Strategy:** Mix long-form value tweets (use the full 4K chars) with punchy hooks. Premium tweets rank higher in replies — comment on AI/dev creator tweets with substance to drive profile visits. Post 1-2x daily for the full 2 months.
+>
+> **Formatting:** X doesn't support markdown. Use Unicode bold (𝗯𝗼𝗹𝗱) and italic (𝘪𝘵𝘢𝘭𝘪𝘤) characters. Generate at: lingojam.com/BoldTextGenerator
+
+---
+
+### Tweet 1 — Launch Tweet (Long-Form, ~2000 chars)
 ```
-I open-sourced 15 engineering rules that make AI write production-grade code.
+I open-sourced the exact system that makes my AI write production-grade code.
 
-Works with Cursor + Claude Code.
+Not prompts. Not "tips." 𝟭𝟱 𝗲𝗻𝗴𝗶𝗻𝗲𝗲𝗿𝗶𝗻𝗴 𝗿𝘂𝗹𝗲𝘀 that load into Cursor and Claude Code automatically.
 
-- Clean architecture
-- No hardcoded secrets
-- Typed APIs
-- Migrations, not raw SQL
-- Real tests
-- Docker/AWS/Vercel deploy patterns
+Here's the problem:
 
-One-line install. MIT license.
+You open Cursor or Claude Code, ask it to build something, and it writes:
+→ Secrets hardcoded in the codebase
+→ Business logic stuffed in route handlers
+→ No migrations, just raw SQL
+→ Zero tests
+→ "It works on my machine" deployment
+
+You're getting junior-level output from a senior-level model.
+
+𝗧𝗵𝗲 𝗳𝗶𝘅 𝗶𝘀𝗻'𝘁 𝗯𝗲𝘁𝘁𝗲𝗿 𝗽𝗿𝗼𝗺𝗽𝘁𝘀. It's engineering standards.
+
+I built 15 rules across 30+ real projects (AI agents, RAG systems, SaaS, client work) and packaged them as:
+
+• Cursor rules (.mdc files) — AI reads them automatically
+• Claude Code rules (CLAUDE.md) — same rules, different format
+• Compose script — pick only the rules you need
+
+𝗧𝗵𝗲 𝟭𝟱 𝗿𝘂𝗹𝗲𝘀:
+
+00 Global Architect — clean architecture, separation of concerns
+10 Backend FastAPI — thin routes, fat services
+20 Frontend Next.js — TypeScript, small components
+30 Database PostgreSQL — migrations, indexes, constraints
+35 API Contracts — versioned, typed, consistent errors
+40 Cache Redis — intentional TTLs, wrapped access
+45 Environment Config — validate at startup
+50 RAG System — separate ingestion from generation
+55 Data Versioning — named checkpoints
+60 AI Agents — tool schemas, validated outputs
+70 Security — no secrets in code, prompt injection resistance
+80 Testing — deterministic tests, mocked externals
+85 Observability — structured errors, audit trails
+90 DevOps — Docker, AWS, Vercel, VPS, CI/CD
+99 Response Style — production code, not tutorials
+
++ 𝟵 𝗱𝗼𝗰 𝘁𝗲𝗺𝗽𝗹𝗮𝘁𝗲𝘀: PRD, Architecture, API Spec, DB Schema, Deployment, Skills, Agents, Loadout, MCP Server
+
+Install in 10 seconds:
+curl -fsSL https://raw.githubusercontent.com/aiagentwithdhruv/ai-coding-rules/main/install.sh | bash
+
+Or compose your own:
+./compose.sh 00 10 30 70 80 99
+
+Free. MIT license. Star it if it saves you time.
 
 github.com/aiagentwithdhruv/ai-coding-rules
+
+#CursorIDE #ClaudeCode #AIEngineering #OpenSource #CodingRules #DevTools #AI #SoftwareEngineering #WebDev #Programming
 ```
 
-### Follow-up Thread (reply to main)
+---
+
+### Tweet 2 — Hot Take (Punchy, ~600 chars)
 ```
-What's inside:
+Your AI writes junior code because you gave it zero engineering standards.
 
-00 Global Architect
-10 Backend (FastAPI)
-20 Frontend (Next.js)
-30 Database (PostgreSQL)
-35 API Contracts
-40 Cache (Redis)
-50 RAG System
-60 AI Agents
-70 Security
-80 Testing
-90 DevOps
-+ 4 more
+No architecture rules.
+No security rules.
+No testing expectations.
+No deployment patterns.
 
-Also: 9 doc templates — PRD, Architecture, API Spec, DB Schema, Deployment, Skills, Agents, Loadout, MCP
+You're asking a principal engineer to code like an intern — because you never told it otherwise.
 
-Battle-tested across 30+ projects.
-```
+I codified 15 rules that load into Cursor + Claude Code automatically.
 
-### Alternative Tweet (punchy)
-```
-Your AI writes junior code because you gave it zero rules.
+Now my AI never hardcodes secrets, always uses clean architecture, writes migrations instead of raw SQL, and deploys correctly.
 
-I codified 15 engineering standards that load into Cursor + Claude Code automatically.
-
-Now my AI thinks like a principal architect.
-
-Free. Open source. One-line install.
+The difference between "AI-assisted coding" and "AI-native engineering" is rules.
 
 github.com/aiagentwithdhruv/ai-coding-rules
+
+#CursorIDE #ClaudeCode #AIcoding #DevTools #OpenSource #Programming #BuildInPublic
 ```
+
+---
+
+### Tweet 3 — Before/After Proof (Long-Form, ~1500 chars)
+```
+𝗕𝗲𝗳𝗼𝗿𝗲 I added engineering rules to my AI:
+
+❌ API keys hardcoded in source files
+❌ 500-line route handlers with business logic
+❌ Direct SQL queries, no migrations
+❌ "Tests? I'll add them later"
+❌ Manual deployment via SSH
+❌ Same mistakes in every new project
+
+𝗔𝗳𝘁𝗲𝗿 15 rules loaded into Cursor + Claude Code:
+
+✅ Environment variables validated at startup
+✅ Thin routes → services → repositories
+✅ Alembic migrations, typed models, indexes
+✅ Deterministic tests with mocked externals
+✅ Docker + CI/CD + one-command deploy
+✅ Every project starts at senior-engineer baseline
+
+The rules aren't complicated. They're just 𝘤𝘰𝘥𝘪𝘧𝘪𝘦𝘥 𝘴𝘦𝘯𝘪𝘰𝘳 𝘦𝘯𝘨𝘪𝘯𝘦𝘦𝘳 𝘩𝘢𝘣𝘪𝘵𝘴.
+
+Most developers using Cursor or Claude Code don't realize:
+→ The AI is capable of writing production code
+→ It just doesn't know YOUR standards
+→ One config file changes everything
+
+This took me 30+ projects to figure out. Took 10 seconds to install.
+
+github.com/aiagentwithdhruv/ai-coding-rules
+
+Free. Open source. MIT license.
+
+#AIcoding #CursorIDE #ClaudeCode #SoftwareEngineering #DevTools #OpenSource #CodeQuality #BuildInPublic #Programming #AI
+```
+
+---
+
+### Tweet 4 — Thread: "How I Set Up Every New Project" (5 tweets)
+
+**Thread tweet 1/5:**
+```
+How I set up every new project so my AI writes production code from day one.
+
+A thread 🧵
+
+(This system is free and open source — link at the end)
+
+#CursorIDE #ClaudeCode #AIEngineering #OpenSource #DevTools
+```
+
+**Thread tweet 2/5:**
+```
+𝗦𝘁𝗲𝗽 𝟭: Install the rules (10 seconds)
+
+curl -fsSL https://raw.githubusercontent.com/aiagentwithdhruv/ai-coding-rules/main/install.sh | bash
+
+This drops 15 engineering rules into your project as:
+• .cursor/rules/*.mdc (for Cursor)
+• claude/CLAUDE.md (for Claude Code)
+
+Your AI reads them automatically. Zero config.
+```
+
+**Thread tweet 3/5:**
+```
+𝗦𝘁𝗲𝗽 𝟮: Compose for your stack
+
+Don't need all 15? Pick only what matters:
+
+./compose.sh 00 10 30 70 80 99    → Backend only
+./compose.sh 00 20 70 80 99        → Frontend only
+./compose.sh 00 50 55 60 70 99     → AI/ML only
+
+The compose script builds a custom CLAUDE.md with just your rules.
+
+This is like .gitignore but for engineering standards.
+```
+
+**Thread tweet 4/5:**
+```
+𝗦𝘁𝗲𝗽 𝟯: Add project docs (optional but powerful)
+
+9 templates included:
+• PRD — what you're building
+• Architecture — how it's structured
+• API Spec — endpoint contracts
+• DB Schema — models and relations
+• Deployment — where and how it ships
+
+Your AI reads these too. Now it doesn't just follow rules — it understands 𝘺𝘰𝘶𝘳 𝘱𝘳𝘰𝘫𝘦𝘤𝘵.
+```
+
+**Thread tweet 5/5:**
+```
+𝗥𝗲𝘀𝘂𝗹𝘁: Every project starts at senior-engineer baseline.
+
+No more:
+• Re-teaching the AI your patterns
+• Fixing the same mistakes
+• Writing prompts to compensate for bad defaults
+
+15 rules. 9 templates. One install.
+
+Tested across 30+ projects — AI agents, RAG systems, SaaS, client work.
+
+github.com/aiagentwithdhruv/ai-coding-rules
+
+Free. MIT. Star it if it helps. ⭐
+
+#CursorIDE #ClaudeCode #AIcoding #OpenSource #DevTools #SoftwareEngineering #BuildInPublic #AI #Programming #WebDev
+```
+
+---
+
+### Tweet 5 — Engagement Bait (Short, Reply-Optimized)
+```
+What's the first thing you configure when starting a new AI coding project?
+
+I load 15 engineering rules into Cursor/Claude Code before writing a single line.
+
+My AI never hardcodes secrets, always writes migrations, always tests critical paths.
+
+Most devs skip this step. That's why their AI writes toy code.
+
+#AIcoding #CursorIDE #ClaudeCode #DevTools #Programming #BuildInPublic #SoftwareEngineering
+```
+
+---
+
+### Tweet 6 — Quote Tweet / Reply Template (For AI Dev Conversations)
+```
+This is exactly why I open-sourced 15 engineering rules for Cursor + Claude Code.
+
+The AI is smart enough. The problem is we give it zero standards.
+
+One config file = your AI thinks like a senior engineer on every project.
+
+github.com/aiagentwithdhruv/ai-coding-rules
+
+#CursorIDE #ClaudeCode #AIcoding #OpenSource #DevTools
+```
+
+---
+
+### Hashtag Strategy
+
+> **Core tags (use on every tweet):** `#CursorIDE` `#ClaudeCode` `#AIcoding` `#OpenSource` `#DevTools`
+>
+> **Rotating tags (mix 2-3 per tweet):** `#BuildInPublic` `#SoftwareEngineering` `#Programming` `#WebDev` `#AI` `#CodeQuality` `#AIEngineering` `#IndieHacker`
+>
+> **Trend-jack when relevant:** `#Cursor` `#Claude` `#Anthropic` `#AItools` `#100DaysOfCode` `#CodeNewbie`
+>
+> **Rule:** 5-10 tags per tweet. Put them at the end, separated by one blank line from the content. Premium long-form tweets can handle more tags without looking spammy.
+
+---
+
+### X Premium 2-Month Posting Calendar
+
+| Week | Day | Tweet | Type | Goal |
+|------|-----|-------|------|------|
+| 1 | Mon | Tweet 1 (Launch) | Long-form value | Announce + drive stars |
+| 1 | Wed | Tweet 2 (Hot take) | Punchy hook | Engagement + profile visits |
+| 1 | Fri | Tweet 4 (Thread) | 5-tweet thread | Deep value + saves |
+| 2 | Tue | Tweet 3 (Before/After) | Long-form proof | Social proof |
+| 2 | Thu | Tweet 5 (Engagement) | Question hook | Replies + reach |
+| 2 | Sat | Tweet 6 (QT/Reply) | Reply to trending AI tweet | Piggyback reach |
+| 3-8 | Ongoing | Reply to AI/dev creators | Short value replies | Profile visits via boosted ranking |
+| 3-8 | 2x/week | New variations of above | Mix long + short | Consistent presence |
+
+**Premium tactics for the 2-month window:**
+- 𝗕𝗼𝗼𝘀𝘁𝗲𝗱 𝗿𝗲𝗽𝗹𝗶𝗲𝘀: Reply to big AI creators (Fireship, ThePrimeagen, LevelUpTuts, AI Jason, Matt Shumer) with substance — Premium replies rank higher
+- 𝗘𝗱𝗶𝘁 𝗯𝘂𝘁𝘁𝗼𝗻: Post, monitor for 15 min, edit typos or add link if engagement is high
+- 𝗔𝗻𝗮𝗹𝘆𝘁𝗶𝗰𝘀: Check which tweet format gets most saves/bookmarks — double down on that format
+- 𝗟𝗼𝗻𝗴-𝗳𝗼𝗿𝗺: Use full 4K chars at least 2x/week — long tweets get more time-on-tweet = more impressions
+- 𝗕𝗹𝘂𝗲 𝗰𝗵𝗲𝗰𝗸: Adds credibility to every reply and quote tweet — use it to build authority fast
 
 ---
 
@@ -467,7 +683,12 @@ Cinematic movie still, dark moody workspace. Young Indian male developer with sh
 | Thumbnail D — Ghost Copies | Automation angle, Twitter | Generate in Ideogram/Midjourney |
 | LinkedIn post | LinkedIn | Copy-paste |
 | LinkedIn comment post | LinkedIn | Copy-paste |
-| Twitter main + thread | Twitter/X | Copy-paste |
+| X Premium Tweet 1 (Launch) | X/Twitter | Copy-paste, long-form |
+| X Premium Tweet 2 (Hot take) | X/Twitter | Copy-paste, punchy |
+| X Premium Tweet 3 (Before/After) | X/Twitter | Copy-paste, long-form |
+| X Premium Tweet 4 (Thread, 5 tweets) | X/Twitter | Copy-paste |
+| X Premium Tweet 5 (Engagement) | X/Twitter | Copy-paste, short |
+| X Premium Tweet 6 (QT/Reply template) | X/Twitter | Copy-paste |
 | Video 1 — What | YouTube Shorts, LinkedIn, Instagram Reels | Record |
 | Video 2 — How | YouTube Shorts, LinkedIn, Instagram Reels | Record |
 
@@ -480,7 +701,13 @@ Cinematic movie still, dark moody workspace. Young Indian male developer with sh
 - [ ] Update ai-coding-rules README with hand-drawn diagram as hero image
 - [ ] Post LinkedIn main post with Thumbnail B (command center)
 - [ ] Post LinkedIn comment post (next day or same day PM)
-- [ ] Tweet main + thread
+- [ ] X Premium: Post Tweet 1 (Launch, long-form) — Monday
+- [ ] X Premium: Post Tweet 2 (Hot take) — Wednesday
+- [ ] X Premium: Post Tweet 4 (5-tweet thread) — Friday
+- [ ] X Premium: Post Tweet 3 (Before/After) — Week 2
+- [ ] X Premium: Post Tweet 5 (Engagement bait) — Week 2
+- [ ] X Premium: Reply to 3-5 AI creator tweets with Tweet 6 template
+- [ ] X Premium: Check analytics after week 1, double down on best format
 - [ ] Record Video 1 (What — before/after)
 - [ ] Record Video 2 (How — install + customize)
 - [ ] Upload shorts to YouTube, LinkedIn, Instagram
